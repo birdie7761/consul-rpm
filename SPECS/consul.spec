@@ -1,7 +1,7 @@
 %if 0%{?_version:1}
 %define         _verstr      %{_version}
 %else
-%define         _verstr      0.9.2
+%define         _verstr      1.0.1
 %endif
 
 Name:           consul
@@ -12,7 +12,7 @@ Summary:        Consul is a tool for service discovery and configuration. Consul
 Group:          System Environment/Daemons
 License:        MPLv2.0
 URL:            http://www.consul.io
-Source0:        https://releases.hashicorp.com/%{name}/%{version}/%{name}_%{version}_linux_amd64.zip
+Source0:        %{name}_%{version}_linux_amd64.zip
 Source1:        %{name}.sysconfig
 Source2:        %{name}.service
 Source3:        %{name}.init
